@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Heart Disease Prediction</title>
+</head>
+
+<body>
+
+<h2>Heart Disease Prediction System</h2>
+
+<form action="/predict" method="post">
+
+<input type="text" name="age" placeholder="Age"><br><br>
+
+<input type="text" name="sex" placeholder="Sex"><br><br>
+
+<input type="text" name="cp" placeholder="Chest Pain Type"><br><br>
+
+<input type="text" name="trestbps" placeholder="Resting Blood Pressure"><br><br>
+
+<input type="text" name="chol" placeholder="Cholesterol"><br><br>
+
+<input type="text" name="fbs" placeholder="Fasting Blood Sugar"><br><br>
+
+<input type="text" name="restecg" placeholder="Rest ECG"><br><br>
+
+<input type="text" name="thalach" placeholder="Max Heart Rate"><br><br>
+
+<input type="text" name="exang" placeholder="Exercise Induced Angina"><br><br>
+
+<input type="text" name="oldpeak" placeholder="Oldpeak"><br><br>
+
+<input type="text" name="slope" placeholder="Slope"><br><br>
+
+<input type="text" name="ca" placeholder="CA"><br><br>
+
+<input type="text" name="thal" placeholder="Thal"><br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+<h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
